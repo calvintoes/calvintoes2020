@@ -9,7 +9,8 @@ const Foot = ({siteFooter}) => (
         width: 1260,
         backgroundColor: '#323232',
         height: '2px',
-        margin: '0 auto'
+        margin: '0 auto',
+        marginTop: '6.5rem'
       }}
       >
     </div>

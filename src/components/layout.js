@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Foot from "./foot"
+import Foot from "./Foot"
 import Header from "./header"
 import "./layout.css"
 
@@ -38,13 +38,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Foot />
-        {/* <footer>
+
+      </div>
+      <Foot />
+      {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` Gatsby `}
     
         </footer> */}
-      </div>
     </>
   )
 }

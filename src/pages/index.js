@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Card from '../components/card'
+import CardLayout from '../components/CardLayout'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -28,8 +28,14 @@ const IndexPage = () => (
     </h3>
     
     <section style={{marginTop: '20.25rem'}}>
-      <h2>Projects</h2>
-      <Card />
+      <h2
+        style={{
+          marginBottom: '5.5rem'
+        }}
+      >
+        Projects
+      </h2>
+      <CardLayout />
     </section>
     
     {/* <Link to="/page-2/">Go to page 2</Link> */}

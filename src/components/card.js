@@ -1,25 +1,23 @@
-import PropTypes from "prop-types"
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import PropTypes from "prop-types";
+import React from "react";
+import Img from "gatsby-image";
 
-const Card = ({projectName, projectDescription}) => {
-  const data = useStaticQuery(graphql`
-  query {
-    file(relativePath: { eq: "cityscape.jpg" }) {
-      childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`)
+const Card = ({projectName, projectDescription, imageName}) => {
 
   return (
-    <div>
-      <Img fixed={data.file.childImageSharp.fixed} />
-      <h3>{projectName}</h3>
+    <div
+      style={{
+        height: '550px',
+        width: '380px'
+      }}
+    >
+      <Img fluid={imageName} />
+      <h3
+        style={{
+          fontWeight: '400',
+          margin: '1.5rem 0'
+        }}  
+      >{projectName}</h3>
       <p>{projectDescription}</p> 
     </div>
       
