@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react";
 
 const Foot = ({siteFooter}) => (
-  <footer className="#contact">
+  <footer className="#contact" >
     <div
       style={{
         width: 1260,
@@ -12,8 +12,8 @@ const Foot = ({siteFooter}) => (
         margin: '0 auto',
         marginTop: '6.5rem'
       }}
-      >
-    </div>
+    / >
+    
     <p  
       style={{
         margin: '2.25rem auto',
@@ -24,10 +24,10 @@ const Foot = ({siteFooter}) => (
       }}
       >
         Hey.
-      </p>
-      <div>
-        <img src="../images/envelope.svg" />
-      </div>
+    </p>
+    <div>
+      <img src="../images/envelope.svg" />
+    </div>
   </footer>
 )
   

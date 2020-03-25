@@ -2,6 +2,11 @@ import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Card from './Card';
+import {
+  Container,
+  Grid
+} from '@material-ui/core'
+import './CardLayout.css'
 
 const CardLayout = () => {
   const data = useStaticQuery(graphql`
@@ -24,9 +29,18 @@ const CardLayout = () => {
 
   return ( 
     <>
-      <div
+    <Grid container className="cardLayout-wrapper">
+      <Grid item className="card" >
+        <Card
+          projectName="Test"
+          projectDescription="This is a test description"
+          imageName={images[2].node.fluid}
+        />
+      </Grid>
+
+      <Grid item className="card"
         style={{
-          margin: '0 5.25rem'
+          marginTop: '8.5rem'
         }}
       >
         <Card
@@ -34,7 +48,30 @@ const CardLayout = () => {
           projectDescription="This is a test description"
           imageName={images[2].node.fluid}
         />
-      </div>
+      </Grid>
+    </Grid>
+
+    <Grid container className="cardLayout-wrapper">
+      <Grid item className="card">
+        <Card
+          projectName="Test"
+          projectDescription="This is a test description"
+          imageName={images[2].node.fluid}
+        />
+      </Grid>
+
+      <Grid item className="card"
+        style={{
+          marginTop: '8rem'
+        }}
+      >
+        <Card
+          projectName="Test"
+          projectDescription="This is a test description"
+          imageName={images[2].node.fluid}
+        />
+      </Grid>
+    </Grid>
     </>
    );
 }

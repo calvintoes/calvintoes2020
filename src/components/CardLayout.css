@@ -1,0 +1,15 @@
+.cardLayout-wrapper{
+  margin: 7rem 12rem;
+}
+
+
+
+@media only screen and (max-width: 600px) { 
+  .cardLayout-wrapper {
+    margin: 0;
+  }
+
+  .cardLayout-wrapper .card {
+    margin: 0;
+  }
+}

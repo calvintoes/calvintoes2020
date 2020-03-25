@@ -11,7 +11,7 @@ const Header = ({ siteTitle, menuLinks }) => (
   >
     <div
       style={{
-        margin: `0 7.5rem`,
+        margin: `0 5rem`,
         padding: `1.75rem 1.0875rem`,
       }}
     >

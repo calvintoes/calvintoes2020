@@ -7,8 +7,9 @@ const Card = ({projectName, projectDescription, imageName}) => {
   return (
     <div
       style={{
-        height: '550px',
-        width: '380px'
+        height: 'auto',
+        width: '400px',
+        padding: '0 1.25rem',
       }}
     >
       <Img fluid={imageName} />
