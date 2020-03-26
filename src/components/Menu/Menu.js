@@ -12,7 +12,7 @@ const Menu = ({open, setOpen}) => {
       <a className="mobile-menu" href="/">
         Photography
         </a>
-      <a className="mobile-menu" href="/">
+      <a className="mobile-menu" href="/#contact">
         Contact
         </a>
       <a className="mobile-menu" href="/">

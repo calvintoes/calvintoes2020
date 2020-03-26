@@ -10,8 +10,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="title-wrapper">
+      {/* TITLE */}
       <h1
-        style={{fontFamily: 'Montserrat', fontSize: 24, fontWeight: 400}}
+        style={{fontFamily: 'Montserrat', fontSize: 26, fontWeight: 400}}
       >
         Hello, I'm Calvin
       </h1>
@@ -30,6 +31,7 @@ const IndexPage = () => (
         Going to be an IBM Intern this Summer.
       </h3>
     </div>
+    {/* PROJECTS */}
     <section style={{marginTop: '20.25rem'}}> 
     <Container>
       <h2>Projects</h2>

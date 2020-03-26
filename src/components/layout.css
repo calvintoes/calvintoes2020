@@ -620,4 +620,7 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+  header{
+    visibility: hidden;
+  }
 }

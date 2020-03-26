@@ -8,11 +8,11 @@ const Card = ({projectName, projectDescription, imageName}) => {
     <div
       style={{
         height: 'auto',
-        width: '400px',
+        width: '500px',
         padding: '0 1.25rem',
       }}
     >
-      <Img fluid={imageName} />
+      <Img fluid={imageName} className="project-image"/>
       <h3
         style={{
           fontWeight: '400',

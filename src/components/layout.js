@@ -34,7 +34,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
+      <Header 
+        siteTitle={data.site.siteMetadata.title} 
+        menuLinks={data.site.siteMetadata.menuLinks} 
+      />
       <div>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen}/>

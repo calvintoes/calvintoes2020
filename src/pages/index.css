@@ -1,8 +1,7 @@
 .title-wrapper{
   margin-left: 5rem;
 }
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 425px){
   .title-wrapper{
     margin-left: 0;
   }
