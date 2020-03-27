@@ -1,0 +1,9 @@
+.experience-wrapper{
+  width: 100%;
+}
+
+.experience-card{
+  width: 300px;
+  height: auto;
+  margin-left: 25%;
+}

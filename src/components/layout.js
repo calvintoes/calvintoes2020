@@ -29,8 +29,20 @@ const Layout = ({ children }) => {
           }
         }
       }
+      allImageSharp {
+        edges {
+          node {
+            id
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   `);
+
+  const images = data.allImageSharp.edges;
 
   return (
     <>
@@ -53,12 +65,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
 
       </div>
-      <Foot />
-      {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` Gatsby `}
-    
-        </footer> */}
+      <Foot icons={images} />
     </>
   )
 }

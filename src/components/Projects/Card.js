@@ -16,7 +16,7 @@ const Card = ({projectName, projectDescription, imageName}) => {
       <h3
         style={{
           fontWeight: '400',
-          margin: '1.5rem 0'
+          margin: '1rem 0'
         }}  
       >{projectName}</h3>
       <p>{projectDescription}</p> 

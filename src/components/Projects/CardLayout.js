@@ -3,7 +3,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Card from './Card';
 import {
-  Container,
   Grid
 } from '@material-ui/core'
 import './CardLayout.css'
@@ -25,50 +24,40 @@ const CardLayout = () => {
   `)
 
   const images = data.allImageSharp.edges
-  // console.log("images: ", images)
-
   return ( 
     <>
     <Grid container className="cardLayout-wrapper">
-      <Grid item className="card" >
+      <Grid item className="card" xs={12} sm={6} >
         <Card
           projectName="Test"
           projectDescription="This is a test description"
-          imageName={images[2].node.fluid}
+          imageName={images[0].node.fluid}
         />
       </Grid>
 
-      <Grid item className="card"
-        style={{
-          marginTop: '8.5rem'
-        }}
-      >
+      <Grid item className="card" xs={12} sm={6}>
         <Card
           projectName="Test"
           projectDescription="This is a test description"
-          imageName={images[2].node.fluid}
+          imageName={images[0].node.fluid}
         />
       </Grid>
     </Grid>
 
     <Grid container className="cardLayout-wrapper">
-      <Grid item className="card">
+      <Grid item className="card" xs={12} sm={6}>
         <Card
           projectName="Test"
           projectDescription="This is a test description"
-          imageName={images[2].node.fluid}
+          imageName={images[0].node.fluid}
         />
       </Grid>
 
-      <Grid item className="card"
-        style={{
-          marginTop: '8rem'
-        }}
-      >
+      <Grid item className="card" xs={12} sm={6} >
         <Card
           projectName="Test"
           projectDescription="This is a test description"
-          imageName={images[2].node.fluid}
+          imageName={images[0].node.fluid}
         />
       </Grid>
     </Grid>
